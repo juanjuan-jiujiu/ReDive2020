@@ -1,0 +1,171 @@
+.denglu {
+	float: right;
+	position: relative;
+	right: 500px;
+}
+.denglu a {
+	color: pink;
+	font-size: 14px;
+	padding: 14px;
+}
+.header {
+	width: 1920px;
+	height: 101px;
+}
+.header ul{
+	position: relative;
+	left: 20px;
+}
+.header img{
+	float: left;
+	position: relative;
+	top: 33px;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav {
+	float: left;
+	margin-top: 33px;
+}
+
+.nav li{
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	margin-top: 9px;
+	margin-left: 14px;
+	margin-right: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	float: left;
+}
+.nav li a{
+	font-size:18px;
+	font-family:Microsoft YaHei;
+	font-weight:400;
+	color:rgba(5,5,5,1);
+}
+.nav li:hover{
+	border-bottom: 2px solid pink;
+}
+
+.form {
+	float: right;
+	margin-top: 38px;
+	position: relative;
+	right: 100px;
+}
+.search {
+	float: left;
+	width: 361px;
+	height: 40px;
+	border: 1px solid rgba(0,164,255,1);
+	padding-left: 19px;
+	font-size:14px;
+	font-family:Microsoft YaHei;
+	font-weight:400;
+	color:rgba(191,191,191,1);
+}
+
+.submit {
+	float: left;
+	width: 50px;
+	height: 40px;
+	border: 1px solid rgba(0,164,255,1);
+	background: rgba(0,164,255,1) url(ReDive/fa-search.png) no-repeat center center;
+}
+
+.nava {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	font-size:14px;
+	font-family:Microsoft YaHei;
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	position: relative;
+	left: 434px;
+	top: 38px;
+}
+.banner {
+	height: 2316px;
+	text-align: center;
+	background-image: url(ReDive/bg_02.jpg);
+}
+.new {
+	width: 1000px;
+	margin: 0 auto;
+}
+.new li{
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #bee9ff;
+}
+.new li a{
+	color: #399be6;
+}
+#new1 {
+	border-bottom: none;
+}
+
+.banner2 {
+	height: 1310px;
+	text-align: center;
+	background-image: url(ReDive/bg_03.jpg);
+}
+
+.banner2-1 {
+	width: 1600px;
+	margin: 0 auto;
+}
+.banner2-1 li {
+	width: 800px;
+	float: left;
+}
+.banner2-2 {
+	width: 1900px;
+	margin: 0 auto;
+}
+.banner2-2 li {
+	width: 950px;
+	float: left;
+}
+.bottom {
+	border-top: 1px solid #CCC;
+	width: 1200px;
+	margin: 0 auto;
+}
+.bottom1 {
+	display: inline-block;
+	float: left;
+}
+.bottom1 span {
+	position: relative;
+	left: 150px;
+}
+.banner2-3 {
+	position: relative;
+	top: 100px;
+	left: 200px;
+	float: left;
+}
+.banner2-3-1 {
+	position: relative;
+	right: 265px;
+	top: 8px;
+}
+.banner2-3-1 a {
+	color: #399be6;
+}
+.banner2-3-2 {
+	position: relative;
+	left: 200px;
+	bottom: 160px;
+}

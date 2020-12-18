@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>公主连结Re:Dive</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			.wrap{
+				width: 1000px;
+				height: 800px;
+				position: relative;
+				margin: 0 auto;
+			}
+			.list{
+				width: 1000px;
+				height: 800px;
+				list-style: none;
+				position: relative;
+				padding-left: 0px;
+			}
+			.item{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: all .8s;
+			}
+			.btn{
+				width: 50px;
+				height: 70px;
+				position: absolute;
+				top: 350px;
+				z-index: 100px;
+			}
+			#goPre{
+				left: 0px;
+			}
+			#goNext{
+				right: 0px;
+			}
+
+			.item.active{
+				opacity: 1;
+				z-index: 10px;
+			}
+			.pointList{
+				padding-left: 0px;
+				list-style-type: none;
+				position: absolute;
+				right: 20px;
+				bottom: 10px;
+				z-index: 1000px;
+			}
+			.point{
+				width: 12px;
+				height: 12px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 100%;
+				float: left;
+				margin-right: 16px;
+				border-style: solid;
+				border-width: 2px;
+				border-color: rgba(255, 255, 255, 0.6);
+				cursor: pointer;
+			}
+			.point.active{
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+			#gotop{
+				position: fixed;
+				display: none;
+				right: 0px;
+				bottom: 0px;
+			}
+			#gotop img:hover{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="gotop">
+			<img src="ReDive.img/下载.jpg" alt="gotop">
+		</div>
+		<div>
+			<div class="denglu">
+				<a href="#">登录</a>
+				<a href="#">快速注册</a>
+			</div>
+			<div class="header">
+				<div class="container clear">
+					<img src="ReDive/logo2.jpg">
+					<ul class="nav clear">
+						<li><a href="#">竞技场查询</a></li>
+						<li><a href="#">PVP</a></li>
+						<li><a href="#">工会战</a></li>
+					</ul>
+					<form class="form">
+						<input type="text" placeholder="您想知道什么呢╰(*°▽°*)╯" class="search">
+						<input type="buttom" class="submit">
+					</form>
+					<a href="#" class="nava">个人中心</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<ul>
+				<li><img src="ReDive/title_int.png"></li>
+				<div class="wrap">
+					<ul class="list">
+						<li class="item active"><img src="ReDive.img/role_name01.png"></li>
+						<li class="item"><img src="ReDive.img/role_name010.png"></li>
+						<li class="item"><img src="ReDive.img/role_name02.png"></li>
+						<li class="item"><img src="ReDive.img/role_name04.png"></li>
+						<li class="item"><img src="ReDive.img/role_name05.png"></li>
+					</ul>
+					<ul class="pointList">
+						<li class="point active" data-index = "0"></li>
+						<li class="point" data-index = "1"></li>
+						<li class="point" data-index = "2"></li>
+						<li class="point" data-index = "3"></li>
+						<li class="point" data-index = "4"></li>
+					</ul>
+					<button type="button" class="btn" id="goPre"><</button>
+					<button type="button" class="btn" id="goNext">></button>
+				</div>
+				<li><img src="ReDive/int-pic02.png">
+					<img src="ReDive/int_frame.png"></li>
+				<br>
+				<li><img src="ReDive/int_frame02.png">
+					<img src="ReDive/int-pic03.png"></li>
+				<br>
+				<br>
+				<li>
+					<img src="ReDive/title_news.png">
+				</li>
+			</ul>
+			<ul class="new">
+				<li><a href="#">《复刻奖励转蛋》</a></li>
+				<li><a href="#">「露娜之塔」開幕預告！</a></li>
+				<li><a href="#">「NORMAL」2倍掉落 活動開催預告</a></li>
+				<li><a href="#">《精選轉蛋》★3 新角色「霞（魔法少女）」登場  機率UP！開催預告！</a></li>
+				<li><a href="#">復刻劇情活動「新春破曉之星大危機」經驗值1.5倍開催！</a></li>
+				<li><a href="#">等級上限開放和追加主線劇情第二部</a></li>
+				<li><a href="#">「聖跡調査」「神殿調査」掉落2倍 活動開催預告</a></li>
+				<li id="new1"><a href="#">《每日寶石增量包》超值推出！</a></li>
+			</ul>
+		</div>
+		<div class="banner2 clear">
+			<div>
+				<img src="ReDive/title_role.png">
+			</div>
+			<div class="banner2-1">
+				<ul>
+					<li><img src="ReDive.img/role_tt04.png"></li>
+					<li><img src="ReDive.img/role_tt010.png"></li>
+				</ul>
+			</div>
+			<div class = "banner2-2">
+				<ul>
+					<li><img src="ReDive.img/role_name04.png"></li>
+					<li><img src="ReDive.img/role_name010.png"></li>
+				</ul>
+			</div>
+			<div class="banner2-3">
+				<form class="form">
+						<input type="text" placeholder="Username/Email" class="search" id="username">
+				</form>
+				<br>
+				<form class="form">
+						<input type="password" placeholder="Password" class="search">
+				</form>
+				<br>
+				<div class="banner2-3-1">
+					<a href="#" id = "in" onclick="submit()">Sing In</a>
+				</div>
+				<div class="banner2-3-2">
+					<img src="ReDive/1592021218581.png">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="bottom">
+			<div class="bottom1 clear">
+				<img src="ReDive.img/footer_logo1.png">
+				<img src="ReDive.img/footer_logo2.png">
+				<span>© Cygames, Inc. Published by So-net Entertainment Taiwan Limited.</span>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function submit() {
+				var username = document.getElementById("username");
+				if(username.value != "") {
+					alert("欢迎回来! 亲爱的：" + username.value);
+				} else {
+					alert("请输入用户名");
+				}
+			}
+
+			var items = document.getElementsByClassName("item");
+			var goPreBtn = document.getElementById("goPre");
+			var goNextBtn = document.getElementById("goNext");
+			var points = document.getElementsByClassName("point");
+
+			var index = 0;//当前是第几张图片
+
+			var clearActive = function(){
+				for(var i = 0; i < items.length; i++) {
+					items[i].className = "item";
+				}
+				for(var i = 0; i < points.length; i++) {
+					points[i].className = "point";
+				}
+			}
+
+			var goindex = function () {
+				clearActive();
+				points[index].className = "point active";
+				items[index].className = "item active";
+			}
+
+			var goNext = function() {
+				if(index < 4) {
+					index++;
+				} else {
+					index = 0;
+				}
+				goindex();
+			}
+			var goPre = function() {
+				if(index == 0) {
+					index = 4;
+				} else {
+					index--;
+				}
+				goindex();
+			}
+			goNextBtn.addEventListener("click", function(){
+				goNext();
+			})
+			goPreBtn.addEventListener("click", function(){
+				goPre();
+			})
+
+			for(var i = 0; i < points.length; i++) {
+				points[i].addEventListener("click", function() {
+					var pointIndex = this.getAttribute("data-index");
+					index = pointIndex;
+					goindex(index);
+				})
+			}
+
+			window.addEventListener("scroll", handle)
+			function handle(){
+				var oTop = document.body.scrollTop||document.documentElement.scrollTop;
+				if(oTop >= 200) {
+					gotop.style.display = "block";
+				} else {
+					gotop.style.display = "none";
+				}
+
+				gotop.onclick = function(){
+					window.scrollTo({
+						top:0,
+						behavior: "smooth"
+					})
+				}
+			}
+		</script>
+	</body>
+</html>
